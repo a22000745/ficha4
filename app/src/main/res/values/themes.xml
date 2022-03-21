@@ -1,0 +1,4 @@
+<resources>
+
+    <style name="Theme.Ficha4" parent="@style/Theme.Leanback" />
+</resources>
