@@ -3,6 +3,11 @@ package com.example.ficha4
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import com.example.ficha4.databinding.ActivityMainBinding
+/*
+import net.objecthunter.exp4j.Expression;
+import com.objecthunter.exp4j.ExpressionBuilder;
+*/
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -23,14 +28,14 @@ class MainActivity : AppCompatActivity() {
                 binding.textVisor.append("1")
             }
         }
-        binding.buttonadition.setOnClickListener{
+        binding.buttonAdition.setOnClickListener{
             Log.i(TAG, "Click no botão +")
             binding.textVisor.append("+")
         }
         binding.buttonEquals.setOnClickListener{
             Log.i(TAG,"Click no botão =")
-            val expression = ExpressionBuilder(
-                binding.txtVisor.text.toString()
+            var expression = ExpressionBuilder(
+                binding.textVisor.text.toString()
             ).build()
             binding.textVisor.text = expression.evaluate().toString()
             Log.i(TAG, "O resultado é ${binding.textVisor.text}")
