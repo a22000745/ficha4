@@ -8,7 +8,3 @@ plugins {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
-
-dependencies {
-    implementation 'net.objecthunter:exp4j:00.4.4'
-}

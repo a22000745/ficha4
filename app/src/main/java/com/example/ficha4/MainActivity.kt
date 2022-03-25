@@ -4,10 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import com.example.ficha4.databinding.ActivityMainBinding
-/*
-import net.objecthunter.exp4j.Expression;
-import com.objecthunter.exp4j.ExpressionBuilder;
-*/
+import net.objecthunter.exp4j.ExpressionBuilder
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
